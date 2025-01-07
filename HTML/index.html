@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Diogo Araújo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="advancedStyle.js"></script>
+    <!-- Barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="#me">ABOUT ME</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#hobbies">HOBBIES</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção inicial com foto e nome -->
+    <header id="me" class="intro">
+        <div class="photo-container">
+            <img src="cvFoto.jpg" alt="Foto de Diogo Araújo" class="profile-photo">
+            <h1><span class = "highlight">Hello, I'm Diogo, a Systems Engineering graduate</span></h1>
+            <p>
+                Before earning my degree, I pursued a course in <span class="important">Game Engineering</span>, which I later decided to leave as it felt too specialized for my broader interests. This decision allowed me to redirect my focus toward building a strong foundation in <span class="important">Systems Engeneering</span>, where I could explore a wider range of technologies and applications. I am deeply passionate about learning, problem-solving, and collaborating in team environments. My adaptability and curiosity drive me to embrace new challenges, continuously expanding my knowledge and skills. While I am currently seeking my first professional opportunity, I have developed practical competencies through academic projects, personal initiatives, and collaboration with peers.
+            </p>                
+            <p>
+                In addition to my technical expertise, I value clear communication, creativity, and a proactive mindset, which I believe are essential for success in any role. I am eager to contribute to innovative projects, grow alongside experienced professionals, and bring value to a forward-thinking organization.
+            </p>
+        </div>
+    </header>
+
+    <!-- Seção de projetos -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="cards-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front project1">
+                        <img src="uniHome.gif" alt="Projeto 1">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Projeto 1</h3>
+                        <p>Descrição do projeto 1 em detalhes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="calc.gif" alt="Projeto 2">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3><span class="important">Calculator</span></h3>
+                        <p><span class="p-cards">Project to familiarise myself with the <span class="important">QT</span> framework</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front project3">
+                        <img src="game.gif" alt="Projeto 3">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Projeto 3</h3>
+                        <p>Descrição do projeto 3 em detalhes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="projeto4.gif" alt="Projeto 4">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Projeto 4</h3>
+                        <p>Descrição do projeto 4 em detalhes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="hobbies">
+        <h2>Hobbies</h2>
+        <h3>Photography</h3>
+        <div class="hobbies-container">
+            <!-- Texto alinhado ao subtítulo -->
+            <div class="hobbies-text">
+                <p>
+                    <span class="hobbies-text p" >Here are some of my favorite photos showcasing my passion for photography:</span>
+                </p>
+            </div>
+            <!-- Slider -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <img src="car.jpg" alt="Photo 1">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="guima.jpg" alt="Photo 2">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <img src="acores.jpg" alt="Photo 3">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="slide">
+                        <img src="cat2.jpg" alt="Photo 4">
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- Rodapé com direitos autorais -->
+    <footer>
+        <p>&copy; 2024 Diogo Araújo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #262730;
+    color: #d5d5d5;
+}
+
+h1, h2, h3 {
+    color: #EEF8FF; /* Verde água */
+    text-align: center;
+    font-size: 40px;
+}
+
+.highlight {
+    color: #77BA99; /* Destaque com a mesma cor verde água */
+    font-size: 1.5em; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.important {
+    color:#77BA99
+}
+
+.p-cards {
+    margin-top: 1em;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+p {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 1em;
+    text-indent: 2em;
+    font-size: 18px;
+    text-align: justify;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #8D89A6;
+    color: #888;
+    text-align: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    padding-right: 100px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 100px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #262730;
+}
+/* Seção inicial */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 60vh;
+    text-align: center;
+}
+
+.photo-container {
+    position: relative;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 260px;
+    border-radius: 50%;
+    border: 4px solid #EEF8FF;
+}
+
+/* Seção de projetos */
+.projects {
+    padding: 50px;
+    background-color: #8D89A6;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px 300px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 700px;
+    height: 380px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    background-color: #262730;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project1flip-card-front {
+    width: 100%;
+    height: 100%; /* Mantém o tamanho do cartão */
+    position: relative; /* Necessário para garantir que a imagem fique dentro do cartão */
+    background-color: #262730; /* Cor de fundo do cartão */
+}
+
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche completamente o cartão */
+    background-color: #262730; /* Cor de fundo padrão */
+}
+
+.flip-card-front.project1 {
+    background-color: #262730; /* Cor de fundo do cartão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-front.project1 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    background-color: #262730; 
+}
+
+/* Estilo para o Projeto 3 */
+.flip-card-front.project3 {
+    background-color: #262730; /* Cor de fundo do cartão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-front.project3 img {
+    width: 100%; /* Permite que a largura do vídeo se ajuste automaticamente */
+    height: auto; /* O vídeo ocupa toda a altura do cartão */
+    object-fit: contain; /* Ajusta o vídeo proporcionalmente para caber no cartão */
+    background-color: #262730; /* Cor de fundo para preencher espaços vazios */
+}
+
+
+.flip-card-back {
+    background-color: #262730;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hobbies {
+    padding: 50px;
+    background-color: #262730;
+    color: #eef8ff;
+    text-align: center;
+}
+
+.hobbies h3 {
+    font-size: 2em;
+    color: #77BA99;
+    margin-bottom: 40px;
+    text-align: left; 
+    margin-left: 100px; 
+}
+
+
+.hobbies-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 100px; 
+    margin-top: 20px; 
+}
+
+.hobbies-text {
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px; 
+    max-width: calc(100% - 200px); 
+    text-indent: 0; 
+    font-size: 18px; 
+}
+
+.hobbies-text p {
+    text-indent: 0; 
+    margin-top: 0; 
+}
+
+
+.slider {
+    position: relative;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-left: 100px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #eef8ff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 2em;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
